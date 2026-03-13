@@ -2,7 +2,7 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <title>Hệ Thống Quản Lý Phòng Khám</title>
+    <title>Hệ Thống Đặt Lịch Khám</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -11,94 +11,118 @@
       <!-- SIDEBAR -->
 
       <div class="sidebar">
-        <h2>🏥Clinic SaiGon</h2>
+        <h2>🏥 Clinic SaiGon</h2>
 
         <ul>
           <li>Dashboard</li>
+          <li>Đặt lịch khám</li>
+          <li>Lịch khám</li>
           <li>Bác sĩ</li>
           <li>Bệnh nhân</li>
           <li>Khoa</li>
-          <li>Lịch khám</li>
-          <li>Lịch làm việc</li>
           <li>Hóa đơn</li>
         </ul>
       </div>
 
-      <!-- MAIN CONTENT -->
+      <!-- MAIN -->
 
       <div class="main">
         <header>
-          <h1>Hệ Thống Quản Lý Phòng Khám</h1>
+          <h1>Hệ Thống Đặt Lịch Phòng Khám</h1>
         </header>
 
-        <!-- DASHBOARD CARDS -->
+        <!-- DASHBOARD -->
 
         <div class="dashboard">
           <div class="card">
-            <h3>Bác sĩ</h3>
-            <p>Quản lý thông tin bác sĩ</p>
+            <h3>50</h3>
+            <p>Lịch khám hôm nay</p>
           </div>
 
           <div class="card">
-            <h3>Bệnh nhân</h3>
-            <p>Quản lý thông tin bệnh nhân</p>
+            <h3>20</h3>
+            <p>Bệnh nhân mới</p>
           </div>
 
           <div class="card">
-            <h3>Khoa</h3>
-            <p>Quản lý chuyên khoa</p>
-          </div>
-
-          <div class="card">
-            <h3>Lịch khám</h3>
-            <p>Quản lý lịch khám bệnh</p>
-          </div>
-
-          <div class="card">
-            <h3>Lịch làm việc</h3>
-            <p>Quản lý lịch làm việc</p>
-          </div>
-
-          <div class="card">
-            <h3>Hóa đơn</h3>
-            <p>Quản lý thanh toán</p>
+            <h3>10</h3>
+            <p>Bác sĩ trực</p>
           </div>
         </div>
 
-        <!-- TABLE -->
-        <p></p>
+        <!-- FORM ĐẶT LỊCH -->
+
+        <div class="form-section">
+          <h2>Đặt lịch khám</h2>
+
+          <form>
+            <input type="text" placeholder="Tên bệnh nhân" />
+
+            <select>
+              <option>Chọn khoa</option>
+              <option>Tim mạch</option>
+              <option>Nhi khoa</option>
+              <option>Da liễu</option>
+            </select>
+
+            <input type="date" />
+
+            <select>
+              <option>Chọn giờ khám</option>
+              <option>08:00</option>
+              <option>09:00</option>
+              <option>10:00</option>
+            </select>
+
+            <button type="submit">Đặt lịch</button>
+          </form>
+        </div>
+
+        <!-- BẢNG LỊCH KHÁM -->
+
         <div class="data-table">
-          <h2>Danh sách dữ liệu</h2>
+          <h2>Danh sách lịch khám</h2>
 
           <table>
-            <tr>
-              <th>ID</th>
-              <th>Tên</th>
-              <th>Thông tin</th>
-              <th>Trạng thái</th>
-            </tr>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Bệnh nhân</th>
+                <th>Khoa</th>
+                <th>Ngày khám</th>
+                <th>Giờ</th>
+                <th>Trạng thái</th>
+              </tr>
+            </thead>
 
-            <tr>
-              <td>01</td>
-              <td>---</td>
-              <td>---</td>
-              <p></p>
-              <td>---</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+              </tr>
 
-            <tr>
-              <td>02</td>
-              <td>---</td>
-              <td>---</td>
-              <td>---</td>
-            </tr>
+              <tr>
+                <td>02</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+              </tr>
 
-            <tr>
-              <td>03</td>
-              <td>---</td>
-              <td>---</td>
-              <td>---</td>
-            </tr>
+              <tr>
+                <td>03</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
